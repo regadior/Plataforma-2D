@@ -11,11 +11,14 @@ public class PlayerMove : MonoBehaviour
 
     Rigidbody2D rb2D;
 
+
     public bool betterJump = false;
 
     public float fallMultiplier = 0.5f;
 
     public float lowJumpMultiplier = 1f; 
+
+    public SpriteRenderer spriteRenderer;
 
     
 
@@ -29,10 +32,12 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey("d"))
         {
             rb2D.velocity = new Vector2(runSpeed, rb2D.velocity.y);
+            spriteRenderer.flipX = false;
         }
         else if (Input.GetKey("a"))
         {
             rb2D.velocity = new Vector2(-runSpeed, rb2D.velocity.y);
+            spriteRenderer.flipX = true;
         }
         else
         {

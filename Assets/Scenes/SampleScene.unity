@@ -3805,11 +3805,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3588ce2abfdd3049bf086564f0dd77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 2
+  runSpeed: 1.5
   jumpSpeed: 3
   betterJump: 1
   fallMultiplier: 0.5
   lowJumpMultiplier: 1
+  spriteRenderer: {fileID: 636006826}
 --- !u!1 &945610941
 GameObject:
   m_ObjectHideFlags: 0
