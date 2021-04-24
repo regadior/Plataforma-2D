@@ -3811,6 +3811,7 @@ MonoBehaviour:
   fallMultiplier: 0.5
   lowJumpMultiplier: 1
   spriteRenderer: {fileID: 636006826}
+  animator: {fileID: 636006825}
 --- !u!1 &945610941
 GameObject:
   m_ObjectHideFlags: 0
@@ -4376,6 +4377,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4456447531839982136, guid: 755f93e1f749c6941b15a2cf46d0963d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456447531839982137, guid: 755f93e1f749c6941b15a2cf46d0963d, type: 3}
+      propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4456447531839982139, guid: 755f93e1f749c6941b15a2cf46d0963d, type: 3}

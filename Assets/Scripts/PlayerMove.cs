@@ -20,6 +20,7 @@ public class PlayerMove : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
 
+    public Animator animator;
     
 
     void Start()
@@ -33,20 +34,34 @@ public class PlayerMove : MonoBehaviour
         {
             rb2D.velocity = new Vector2(runSpeed, rb2D.velocity.y);
             spriteRenderer.flipX = false;
+            animator.SetBool("Run", true);
         }
         else if (Input.GetKey("a"))
         {
             rb2D.velocity = new Vector2(-runSpeed, rb2D.velocity.y);
             spriteRenderer.flipX = true;
+            animator.SetBool("Run", true);
         }
         else
         {
             rb2D.velocity = new Vector2(0, rb2D.velocity.y);
+            animator.SetBool("Run", false);
         }
 
         if (Input.GetKey("space") && CheckGround.isGrounded)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
+            animator.SetBool("Run", false);
+        }
+
+        if (CheckGround.isGrounded==false)
+        {
+            animator.SetBool("Jump", true);
+            animator.SetBool("Run", false);
+        }
+        if (CheckGround.isGrounded==true)
+        {
+            animator.SetBool("Jump", false);
         }
 
         if (betterJump)
