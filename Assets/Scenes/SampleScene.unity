@@ -3807,6 +3807,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 2
   jumpSpeed: 3
+  betterJump: 1
+  fallMultiplier: 0.5
+  lowJumpMultiplier: 1
 --- !u!1 &945610941
 GameObject:
   m_ObjectHideFlags: 0

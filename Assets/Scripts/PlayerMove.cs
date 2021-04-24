@@ -11,9 +11,13 @@ public class PlayerMove : MonoBehaviour
 
     Rigidbody2D rb2D;
 
+    public bool betterJump = false;
 
+    public float fallMultiplier = 0.5f;
 
+    public float lowJumpMultiplier = 1f; 
 
+    
 
     void Start()
     {
@@ -39,6 +43,20 @@ public class PlayerMove : MonoBehaviour
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpSpeed);
         }
+
+        if (betterJump)
+        {
+            if(rb2D.velocity.y<0)
+            {
+                rb2D.velocity +=Vector2.up*Physics2D.gravity.y*(fallMultiplier) * Time.deltaTime;
+            }
+            if(rb2D.velocity.y>0 && !Input.GetKey("space"))
+            {
+                rb2D.velocity +=Vector2.up*Physics2D.gravity.y*(lowJumpMultiplier) * Time.deltaTime;
+            }
+        } 
+
+
 
     }
 
