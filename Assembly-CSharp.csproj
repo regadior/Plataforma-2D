@@ -42,6 +42,8 @@
      <Compile Include="Assets\Scripts\CheckGround.cs" />
      <Compile Include="Assets\Scripts\EnemySpike.cs" />
      <Compile Include="Assets\Scripts\Nextlevel.cs" />
+     <Compile Include="Assets\Scripts\CheckPoint.cs" />
+     <Compile Include="Assets\PlayerRespawm.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/unity/2020.3.5f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
