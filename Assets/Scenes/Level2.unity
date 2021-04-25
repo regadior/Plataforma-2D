@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 104541951}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3804,6 +3804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 1.5
   jumpSpeed: 3
+  doubleJumpSpeed: 2.5
   betterJump: 1
   fallMultiplier: 0.5
   lowJumpMultiplier: 1
