@@ -123,6 +123,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &41603071 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7736192017840417132, guid: 682ecc89ba8df2c43b8b39c69db6b76b, type: 3}
+  m_PrefabInstance: {fileID: 7736192017677308361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &41603072
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41603071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b1e8938f8cb2e7f4c8c4f1f735cb4de0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &48104980
 GameObject:
   m_ObjectHideFlags: 0
@@ -8256,6 +8280,10 @@ PrefabInstance:
       value: 0.40271917
       objectReference: {fileID: 0}
     - target: {fileID: 272788670615946683, guid: d9d4661d80d135142b61ae56561bf8d1, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 92295b3d2f7ef9d4eaecc4ec8216ff47, type: 2}
+    - target: {fileID: 272788670615946683, guid: d9d4661d80d135142b61ae56561bf8d1, type: 3}
       propertyPath: m_Offset.x
       value: 0.0040083528
       objectReference: {fileID: 0}
@@ -8399,7 +8427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7736192017840417120, guid: 682ecc89ba8df2c43b8b39c69db6b76b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.271
+      value: -0.277
       objectReference: {fileID: 0}
     - target: {fileID: 7736192017840417120, guid: 682ecc89ba8df2c43b8b39c69db6b76b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8436,6 +8464,14 @@ PrefabInstance:
     - target: {fileID: 7736192017840417132, guid: 682ecc89ba8df2c43b8b39c69db6b76b, type: 3}
       propertyPath: m_Name
       value: Spikes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7736192017840417134, guid: 682ecc89ba8df2c43b8b39c69db6b76b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 92295b3d2f7ef9d4eaecc4ec8216ff47, type: 2}
+    - target: {fileID: 7736192017840417134, guid: 682ecc89ba8df2c43b8b39c69db6b76b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 682ecc89ba8df2c43b8b39c69db6b76b, type: 3}
